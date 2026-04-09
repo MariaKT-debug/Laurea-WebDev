@@ -53,6 +53,7 @@ input[type="submit"]:hover {
   background-color: #afe1af;
   border: 1px solid #787878;
 }
+/* I created a CSS class for the button and added a hover effect that changes the background color. */
 .transition-button {
         background-color: lightblue;
         padding: 10px 20px;
