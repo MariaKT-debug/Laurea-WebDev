@@ -97,7 +97,7 @@ input[type="submit"]:hover {
         filter: grayscale(0%);
       }
 .quote {
-        position: left;
+        position: relative;
         padding-left: 20px;
         font-style: italic;
       }
@@ -111,7 +111,7 @@ input[type="submit"]:hover {
         color: lightgray;
       }
 footer {
-        text-align: absolute;
+        text-align: center;
         font-size: 0.9em;
         color:rgb(42, 36, 36) ;
       }
