@@ -59,6 +59,16 @@
         flex: 100%;
       }
     }
+
+    
+ul {
+  list-style: disc;
+}
+li {
+  float: left;
+  margin: 0 20px;
+}
+
 .responsive-nav .nav-list {
       display: flex;
       list-style: none;
