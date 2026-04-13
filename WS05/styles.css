@@ -52,11 +52,13 @@
     .column {
       flex: 1;
       padding: 10px;
+      
     }
     
     @media (max-width: 600px) {
       .column {
         flex: 100%;
+       
       }
     }
 
@@ -67,6 +69,7 @@ ul {
 li {
   float: left;
   margin: 0 20px;
+  list-style-type: circle;
 }
 
 .responsive-nav .nav-list {
