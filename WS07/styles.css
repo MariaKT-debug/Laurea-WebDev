@@ -27,24 +27,24 @@ body {
     color: rgb(8, 8, 8);
     padding: 40px;
 }
-.menu {
+.nav {
   grid-area: menu;
   }
   
-.menu ul {
+.nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.menu li {
+.nav li {
   padding: 8px;
   margin-bottom: 7px;
   background-color: #4fc8f4;
   color: #040404dd;
 }
 
-.menu li:hover {
+.nav li:hover {
   background-color: #90a4aa;
 }
 
