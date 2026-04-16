@@ -17,6 +17,26 @@ nav {
     margin: 5em 3em 0 0;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+nav li a {
+    display: block;
+    color:rgb(13, 15, 14);
+    text-align:center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
 main {
     clear: left;
 }
+
