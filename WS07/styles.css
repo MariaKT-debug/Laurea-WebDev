@@ -16,3 +16,11 @@ body {
     padding: 10px;
 
 }
+
+.header {
+    grid-area: header;
+    background-color: #b4cb8e;
+    text-align: center;
+    color: rgb(8, 8, 8);
+    padding: 40px;
+}
