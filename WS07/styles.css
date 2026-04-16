@@ -5,18 +5,18 @@
 body {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     font-size: 20px;
-    background-color: #d7c0c0;
+    background-color: antiquewhite;
 }
 
 .grid-container {
     display: grid;
     grid-template-areas: 
-    "header"
-    "menu"
-    "main"
-    "footer";
+    'header'
+    'menu'
+    'main'
+    'footer';
     gap: 10px;
-    padding: 10px;
+    background-color: antiquewhite;
 
 }
 
@@ -45,5 +45,5 @@ body {
 }
 
 .menu li:hover {
-  background-color: #435f68;
+  background-color: #90a4aa;
 }
