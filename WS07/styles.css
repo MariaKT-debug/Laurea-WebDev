@@ -47,3 +47,11 @@ body {
 .menu li:hover {
   background-color: #90a4aa;
 }
+
+.video {
+    grid-area: video;
+    background-color: #b4cb8e;
+    text-align: right;
+    color: rgb(8, 8, 8);
+    padding: 20px;
+}
