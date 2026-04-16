@@ -48,10 +48,26 @@ body {
   background-color: #90a4aa;
 }
 
+.content {
+    grid-area: main;
+    background-color: #b4cb8e;
+    text-align: left;
+    color: rgb(8, 8, 8);
+    padding: 20px;
+}
+
 .video {
     grid-area: video;
     background-color: #b4cb8e;
     text-align: right;
     color: rgb(8, 8, 8);
     padding: 20px;
+
+}
+.footer {
+    grid-area: footer;
+    background-color: #b4cb8e;
+    text-align: center;
+    color: rgb(8, 8, 8);
+    padding: 10px;
 }
