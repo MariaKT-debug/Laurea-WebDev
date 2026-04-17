@@ -24,6 +24,12 @@ img, video {
 video {
     margin: 0 auto 4%;
 }
+video::cue {
+    background-image: linear-gradient(to bottom, dimgray, lightgray);
+    color: black
+}
+
+
 nav {
     width: 70%;
     float: right;
