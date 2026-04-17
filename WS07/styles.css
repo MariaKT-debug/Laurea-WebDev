@@ -5,14 +5,25 @@
 body {
     background-color: antiquewhite;
 }
-
-
-
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
+article, aside, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 header {
     width: 25%;
     float: left;
 }
 
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+video {
+    margin: 0 auto 4%;
+}
 nav {
     width: 70%;
     float: right;
