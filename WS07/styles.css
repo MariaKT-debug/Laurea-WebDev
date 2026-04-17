@@ -77,3 +77,8 @@ footer {
     padding: 0 1em;
 }
 
+iframe {
+    width: 600px;
+    height: 450px;
+    border: 2px solid grey;
+}
