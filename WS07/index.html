@@ -27,14 +27,15 @@
                 <h2>Tervetuloa Lulu-hamsterin verkkosivustolle!</h2>
                 <p>Tämä on Lulu-hamsterin oma verkkosivusto, jossa voit löytää tietoa hänen elämästään, ravinnosta ja terraariosta.</p>
             
-            <video controls poster="media/etusivu/Lulu.jpg"
-            <video width="600" height="500" muted>
+            <video controls poster="media/etusivu/Lulu.jpg" width="600" height="500" muted aria-describedby="video-description-text">
                 <source src="media/etusivu/Lulu_kotona.mp4" type="video/mp4">
                 <source src="media/etusivu/Lulu_kotona.webm" type="video/webm">
                 <p>Valitettavasti video ei ole tuettu selaimessasi.</p>
                 <track src="captions.vtt" kind="captions" srclang="fi" label="Finnish">
-                <track src="descriptions.vtt" kind="descriptions" srclang="fi" label="Finnish">
+                <track src="descriptions.vtt" kind="descriptions" srclang="fi" label="Finnish descriptions" default>
             </video>
+            <p id="video-description-text" class="visually-hidden">Videon kuvailu ladataan tiedostosta descriptions.vtt.</p>
+            <p><a href="descriptions.vtt">Avaa videon kuvailutekstit (descriptions.vtt)</a></p>
             
             </div>
 
@@ -50,5 +51,50 @@
 
 
     </div>
+    <script>
+        (async function loadVideoDescription() {
+            const descriptionTarget = document.getElementById("video-description-text");
+            if (!descriptionTarget) {
+                return;
+            }
+
+            try {
+                const response = await fetch("descriptions.vtt");
+                if (!response.ok) {
+                    return;
+                }
+
+                const vtt = await response.text();
+                const lines = vtt.split(/\r?\n/);
+                const descriptionLines = lines.filter((line) => {
+                    const trimmed = line.trim();
+
+                    if (!trimmed) {
+                        return false;
+                    }
+
+                    if (trimmed === "WEBVTT" || trimmed.startsWith("NOTE")) {
+                        return false;
+                    }
+
+                    if (/^\d+$/.test(trimmed)) {
+                        return false;
+                    }
+
+                    if (trimmed.includes("-->") || /^Date:\s*/.test(trimmed) || /^File Name:\s*/.test(trimmed) || /^Student:\s*/.test(trimmed)) {
+                        return false;
+                    }
+
+                    return true;
+                });
+
+                if (descriptionLines.length > 0) {
+                    descriptionTarget.textContent = descriptionLines.join(" ");
+                }
+            } catch (error) {
+                console.error("Kuvailutekstin lataus epäonnistui.", error);
+            }
+        })();
+    </script>
 </body>
 </html>
