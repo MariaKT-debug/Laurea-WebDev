@@ -60,5 +60,13 @@ nav li a {
 
 main {
     clear: left;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
 }
 
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    padding: 0 1em;
+}
