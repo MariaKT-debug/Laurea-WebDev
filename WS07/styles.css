@@ -19,6 +19,7 @@ header {
 img, video {
     max-width: 100%;
     display: block;
+    border: solid 1px grey;
 }
 
 video {
