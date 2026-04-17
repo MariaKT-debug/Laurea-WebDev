@@ -55,6 +55,11 @@ nav li a {
     padding: 0.5em 1em;
     text-decoration: none;
 }
+nav li a:hover {
+    background-color: rgb(13, 15, 14);
+    color: white;
+}
+
 
 main {
     clear: left;
