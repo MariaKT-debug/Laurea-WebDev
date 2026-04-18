@@ -5,6 +5,10 @@ article, aside, audio, video {
     border: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: antiquewhite;
 }
