@@ -9,11 +9,46 @@ article, aside, audio, video {
     box-sizing: border-box;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: lightyellow;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: lightcoral;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: lightpink;
+    }
+}
+
 body {
     background-color: antiquewhite;
 }
 
-header {
+.header {
     width: 25%;
     float: left;
 }
@@ -33,39 +68,39 @@ video::cue {
 }
 
 
-nav {
+.nav {
     width: 70%;
     float: right;
     margin: 5em 3em 0 0;
 }
 
-nav ul {
+.nav ul {
     list-style-type: none;
     margin: 0;
     text-align: right;
 }
 
-nav li {
+.nav li {
     display: inline-block;
     font-size: 1.5em;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-nav li a {
+.nav li a {
     display: block;
     color:rgb(13, 15, 14);
     text-align:center;
     padding: 0.5em 1em;
     text-decoration: none;
 }
-nav li a:hover {
+.nav li a:hover {
     background-color: rgb(13, 15, 14);
     color: white;
 }
 
 
-main {
+.main {
     clear: left;
     background-color: #fff;
     padding: 2%;
@@ -78,7 +113,7 @@ main {
     text-decoration: none;
 }
 
-footer {
+.footer {
     font-size: 0.75em;
     text-align: center;
     padding: 0 1em;
