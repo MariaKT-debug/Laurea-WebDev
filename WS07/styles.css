@@ -1,4 +1,4 @@
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
+body, header, nav, main, footer, h1, div, img, ul, iframe, figure, figcaption, section, content, 
 article, aside, audio, video {
     margin: 0;
     padding: 0;
@@ -98,32 +98,16 @@ iframe {
         "header"
         "nav"
         "main"
+        "content"
+        "iframe"
         "footer";
 }
-.container div {
-  background-color: white;
-  padding: 10px;
-}
-.container div.header {
-  grid-area: header;
-  text-align: center;
-}
-.container div.nav {
-  grid-area: nav;
-}
-.container div.main {
-  grid-area: main;
-}
-.container div.footer {
-  grid-area: footer;
-  text-align: center;  
-}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
         background-color: lightblue;
-        display: block;
     }
 }
 
@@ -152,5 +136,6 @@ iframe {
 @media only screen and (min-width: 1200px) {
     body {
         background-color: beige;
+
     }
 }
