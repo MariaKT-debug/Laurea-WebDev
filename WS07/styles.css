@@ -116,6 +116,7 @@ iframe {
         background-color: lightgreen;
     
 }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -129,10 +130,11 @@ iframe {
     .grid-container {
         background-color: lightcoral;
 }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .grid-container {
         background-color: lightpink;
     }
-}               
+}              
