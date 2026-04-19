@@ -67,18 +67,9 @@ body {
 .side {
   -ms-flex: 10%; 
   flex: 10%;
-  background-color: #f1f1f1;
+  background-color: antiquewhite;
   padding: 20px;
 }
-
-
-.main {   
-  -ms-flex: 500%; 
-  flex: 30%;
-  background-color: white;
-  padding: 30px;
-}
-
 
 
 video {
@@ -97,8 +88,9 @@ video::cue {
 .main {
     clear: right;
     background-color: #fff;
-    padding: 2%;
+    padding: 90px;
     font-size: 1.25em;
+    margin: 20px;
 }
 
 .external-link {
@@ -141,9 +133,9 @@ iframe {
 }
 
 .frame {
-    position: relative;
-    max-width: 300px;
-    margin: 2% auto;
+    position: left;
+    max-width: 400px;
+    margin: auto;
 
 }
 
@@ -153,7 +145,7 @@ iframe {
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    width: 134%;
+    width: 100%;
     padding: 10px;
     text-align: center;
     font-family: Verdana, Arial,sans-serif;
