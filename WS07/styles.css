@@ -5,9 +5,7 @@ article, aside, audio, video {
     border: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
+
 
 
 
@@ -16,14 +14,15 @@ body {
 }
 
 .header {
-    width: 25%;
-    float: left;
+    top: 0;
+    height: 130px;
 }
 
 img, video {
     max-width: 100%;
     display: block;
     border: solid 1px grey;
+    position: relative;
 }
 
 video {
@@ -37,14 +36,14 @@ video::cue {
 
 .nav {
     width: 70%;
-    float: right;
+    float: center;
     margin: 5em 3em 0 0;
 }
 
 .nav ul {
     list-style-type: none;
     margin: 0;
-    text-align: right;
+    text-align: center;
 }
 
 .nav li {
@@ -87,11 +86,17 @@ video::cue {
 }
 
 iframe {
-    width: 600px;
-    height: 450px;
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
     border: 2px solid grey;
 }
 
+frame {
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
 .grid-container {
     display: grid;
     grid-template-areas: 
@@ -103,39 +108,20 @@ iframe {
         "footer";
 }
 
+* {
+    box-sizing: border-box;
+}
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
         background-color: lightblue;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+
+@media only screen and (min-width: 601px) {
     body {
         background-color: lightgreen;
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    body {
-        background-color: lightyellow;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    body {
-        background-color: lightcoral;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    body {
-        background-color: beige;
-
-    }
-}
