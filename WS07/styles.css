@@ -92,19 +92,34 @@ iframe {
     border: 2px solid grey;
 }
 
-frame {
-    position: relative;
-    max-width: 450px;
+.frame {
+    position: left;
+    max-width: 300px;
     margin: 2% auto;
+
 }
+
+
+.pic-text {
+    position: left;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Arial,sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
 .grid-container {
     display: grid;
     grid-template-areas: 
         "header"
         "nav"
         "main"
-        "content"
-        "iframe"
         "footer";
 }
 
