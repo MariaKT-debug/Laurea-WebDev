@@ -17,14 +17,9 @@
   background-color: antiquewhite;
   padding: 20px;
 }
-iframe {
-    position: relative;
-    max-width: 450px;
-    margin: 2% auto;
-    border: 2px solid grey;
-}
 
-.frame {
+
+/* .frame {
     position: left;
     max-width: 400px;
     margin: auto;
@@ -43,7 +38,34 @@ iframe {
     font-family: Verdana, Arial,sans-serif;
     font-size: 1.5em;
     font-weight: bold;
+} */
+
+.card-container {
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 150px;
 }
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .back {
+  transform: rotateY(180deg);
+}
+
 table {
   font-family: Arial, sans-serif;
   border-collapse: collapse;
@@ -109,13 +131,19 @@ p {
     
     <div class="row">
         <div class="side">
-
+            <div class="card-container">
+                <div class="card">
+                    <div class="side"><img src="media/lulu/lulu_taulu.jpg" alt="Piirros Lulu-hamsterista, Lulu on kädessä." width="400" height="300"></div>
+                    <div class="side back"><img src="media/lulu/lulu_kämmenessä.jpg" alt="Lulu on kädessä." width="400" height="300"></div>
+            </div>
+        </div>
+    </div>
         
-        <figure class="frame">
+        <!-- <figure class="frame">
             <img src="media/lulu/lulu_taulu.jpg" alt="Piirros Lulu-hamsterista, Lulu on kädessä." width="400" height="300">
             <figcaption class="pic-text">Piirros Lulu-hamsterista</figcaption>
         </figure>
-        </div>
+        </div> -->
 
         <div class="main" style="margin: 20px; padding: 20px;">
             <h2>Lulu Kaszaki -hamsteri</h2>
