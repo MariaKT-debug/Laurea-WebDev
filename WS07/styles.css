@@ -24,7 +24,6 @@ body {
 }
 
 
-
 .header {
     padding: 80px;
     text-align: center;
@@ -72,18 +71,11 @@ body {
 
 
 
-
-
-
 .footer {
     font-size: 1em;
     text-align: center;
     padding: 0 1em;
 }
-
-
-
-
 
 @media (min-width: 768px) {
     .header {grid-area: 1 / span 6;}
