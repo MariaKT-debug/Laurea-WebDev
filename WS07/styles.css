@@ -76,46 +76,10 @@ body {
     color: white;
 }
 
-.row {  
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap; 
-  flex-wrap: wrap;
-}
-.side {
-  -ms-flex: 10%; 
-  flex: 10%;
-  background-color: antiquewhite;
-  padding: 20px;
-}
-
-
-video {
-    margin: 0 auto 4%;
-    display: block;
-    border: 2px solid grey;
-}
-video::cue {
-    background-image: linear-gradient(to bottom, dimgray, lightgray);
-    color: black
-}
 
 
 
 
-.main {
-    clear: right;
-    background-color: #fff;
-    padding: 200px;
-    font-size: 1.25em;
-    margin: 20px;
-}
-
-.external-link {
-    color: #0d0557;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 .footer {
     font-size: 1em;
@@ -127,31 +91,4 @@ video::cue {
 
 
 
-iframe {
-    position: relative;
-    max-width: 450px;
-    margin: 2% auto;
-    border: 2px solid grey;
-}
-
-.frame {
-    position: left;
-    max-width: 400px;
-    margin: auto;
-
-}
-
-
-.pic-text {
-    position: left;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: black;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    font-family: Verdana, Arial,sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-}
 
