@@ -25,7 +25,7 @@ video {
   box-sizing: border-box;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .grid-container {
     grid-template-areas:
       "header"
@@ -33,30 +33,12 @@ video {
       "main"
       "footer";
     grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid-container {
     .nav-links {
       display: block;
     }
   }
-}
-
-@media (max-with: 480px) {
-  .grid-container {
-    .nav-links {
-      display: block;
-    }
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid-container {
-    .nav-links {
-      display: block;
-    }
+  .nav li {
+    display: inline-block;
   }
 }
 
@@ -146,7 +128,6 @@ p {
 }
 
 .nav li {
-  display: inline-block;
   font-size: 1.5em;
   font-family: "Francois One", sans-serif;
   font-weight: bold;
