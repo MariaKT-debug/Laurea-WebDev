@@ -37,13 +37,13 @@
         transform: rotateY(180deg);
       }
 
-      table {
+      .table {
         font-family: "Roboto Slab", serif;
         border-collapse: collapse;
         width: 40%;
         margin: 0 auto;
       }
-      caption {
+      .table caption {
         font-size: 1.5em;
         font-weight: bold;
         padding: 1%;
@@ -119,18 +119,39 @@
       @media (min-width: 768px) {
         .logo {
           grid-column: 1 / span 1;
+          grid-row: 2;
         }
         .header {
-          grid-column: 2 / span 10;
+          grid-column: 1 / span 12;
+          grid-row: 1;
         }
         .nav {
           grid-column: 1 / span 12;
+          grid-row: 2;
         }
         .card-container {
-          grid-column: 1 / span 4;
+          grid-column: 1 / span 3;
+          grid-row: 3 / span 3;
         }
         .main {
-          grid-column: 5 / span 8;
+          grid-column: 5 / span 3;
+          grid-row: 3 / span 3;
+        }
+        .table {
+          grid-column: 9 / span 4;
+          grid-row: 3 / span 3;
+        }
+        .ul {
+          grid-column: 9 / span 4;
+          grid-row: 6 / span 2;
+        }
+        .previous {
+          grid-column: 1 / span 1;
+          grid-row: 8 / span 1;
+        }
+        .next {
+          grid-column: 12 / span 1;
+          grid-row: 8 / span 1;
         }
         .footer {
           grid-column: 1 / span 12;
@@ -171,12 +192,12 @@
             <img
               src="media/lulu/lulu_taulu.jpg"
               alt="Piirros Lulu-hamsterista, Lulu on kädessä."
-              width="400"
-              height="300"
+              width="300"
+              height="200"
             />
           </div>
           <div class="side back">
-            <img src="media/lulu/lulu_kämmenessä.jpg" alt="Lulu on kädessä." width="400" height="300" />
+            <img src="media/lulu/lulu_kämmenessä.jpg" alt="Lulu on kädessä." width="300" height="200" />
           </div>
         </div>
       </div>
@@ -191,7 +212,7 @@
         <p>Hänen turkkinsa on helmiäissafiiri värinen.</p>
       </div>
 
-      <table>
+      <div class="table">
         <caption>
           Lulun aikataulu
         </caption>
@@ -225,9 +246,9 @@
           <td></td>
           <td>kyllä</td>
         </tr>
-      </table>
+      </div>
 
-      <ul>
+      <div class="ul">
         <li>Hamsteri nukkuu päivän aikana jopa 14 tuntia.</li>
         <li>Paras aika käsitellä ja leikittää hamsteria on iltaisin, kun se on luonnostaan hereillä.</li>
         <li>
@@ -235,9 +256,13 @@
           auringonlaskua.
         </li>
         <li>Hamsteri on helppohoitoinen, kunhan sen annetaan noudattaa omaa yöaktiivista rytmiään.</li>
-      </ul>
-      <a href="index.html" class="previous">&laquo; Previous</a>
-      <a href="terraario.html" class="next">Next &raquo;</a>
+      </div>
+      <div class="previous">
+        <a href="index.html" class="previous">&laquo; Edellinen</a>
+      </div>
+      <div class="next">
+        <a href="terraario.html" class="next">Seuraava &raquo;</a>
+      </div>
 
       <div class="footer">
         <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>

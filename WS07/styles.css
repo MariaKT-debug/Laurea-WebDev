@@ -25,7 +25,7 @@ video {
   box-sizing: border-box;
 }
 
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
   .grid-container {
     grid-template-areas:
       "header"
@@ -42,8 +42,8 @@ video {
   }
 }
 
-/*@media speech for screen readers */
-@media speech {
+/* @media speech for screen readers */
+/* @media speech {
   .grid-container {
     grid-template-areas:
       "header"
@@ -52,8 +52,8 @@ video {
       "footer";
     grid-template-columns: 1fr;
   }
-}
-@media (orientation: portrait) {
+} */
+/* @media (orientation: portrait) {
   .grid-container {
     grid-template-areas:
       "header"
@@ -62,7 +62,7 @@ video {
       "footer";
     grid-template-columns: 1fr;
   }
-}
+} */
 
 .grid-container {
   display: grid;
