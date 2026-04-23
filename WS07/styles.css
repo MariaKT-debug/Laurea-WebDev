@@ -47,6 +47,21 @@ article, aside, audio, video {
     }
 }
 
+/*@media speech for screen readers */
+@media speech {
+    .grid-container {
+        grid-template-areas: 
+            'header'
+            'nav'
+            'main'
+            'footer';
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
 
 .grid-container {
     display: grid;
