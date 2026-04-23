@@ -9,6 +9,60 @@ article, aside, audio, video {
     box-sizing: border-box;
 }
 
+
+
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-areas: 
+            'header'
+            'nav'
+            'main'
+            'footer';
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .grid-container {
+        .nav-links {
+            display: block;
+            
+        }
+    }
+}
+
+@media (max-with: 480px) {
+    .grid-container {
+        .nav-links {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .grid-container {
+        .nav-links {
+            display: block;
+        }
+    }
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'nav'
+        'main'
+        'footer';
+}
+
+
+
+
+
+
+
  .francois-one-regular {
   font-family: "Francois One", sans-serif;
   font-weight: 400;
@@ -27,14 +81,6 @@ body {
 }
 
 
-.grid-container {
-    display: grid;
-    grid-template-areas: 
-        'header'
-        'nav'
-        'main'
-        'footer';
-}
 
 
 .header {
