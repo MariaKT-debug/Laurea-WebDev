@@ -1,128 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-    * {box-sizing:border-box}
-    article {
+      * {
+        box-sizing: border-box;
+      }
+      article {
         padding: 2%;
-        font-family: 'Roboto Slab', serif;
-    }
-    article h3 {
+        font-family: "Roboto Slab", serif;
+      }
+      article h3 {
         text-align: center;
         font-size: 1.5em;
         margin-bottom: 10px;
         font-family: "Roboto Slab", serif;
-
-    }
-    article img {
+      }
+      article img {
         margin: 0 auto;
         display: block;
         position: relative;
-    }
-    article p {
+      }
+      article p {
         text-align: center;
         font-size: 1.2em;
         margin-top: 10px;
         display: block;
         font-family: "Roboto Slab", serif;
-    }
-    img {
+      }
+      img {
         display: block;
         margin: 0 auto;
-    }
-    a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
-a:hover {
-  background-color: antiquewhite;
-  color: black;
-  font-weight: bold;
-  border:solid black;
-  font-family: "Roboto Slab", serif;
-}
-.previous {
-  background-color: black;
-  color: white;
-  font-family: "Francois One", sans-serif;
-}
-.next {
-  background-color: black;
-  color: white;
-    font-family: "Francois One", sans-serif;
-}
-
-
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+      }
+      a:hover {
+        background-color: antiquewhite;
+        color: black;
+        font-weight: bold;
+        border: solid black;
+        font-family: "Roboto Slab", serif;
+      }
+      .previous {
+        background-color: black;
+        color: white;
+        font-family: "Francois One", sans-serif;
+      }
+      .next {
+        background-color: black;
+        color: white;
+        font-family: "Francois One", sans-serif;
+      }
     </style>
 
     <title>Lulu-hamsterin verkkosivusto</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="grid-container">
-        <div class="header">
-            <a href="index.html"><img src="media/lulu/lulu_taulu.jpg" alt="Kuva Lulu-hamsterista kotona, Lulu on kämmenellä. Se on logo." width="100" height="100"></a> 
-            <h1>Lulu-hamsterin verkkosivusto</h1>
-        </div>
+      <div class="header">
+        <a href="index.html"
+          ><img
+            src="media/lulu/lulu_taulu.jpg"
+            alt="Kuva Lulu-hamsterista kotona, Lulu on kämmenellä. Se on logo."
+            width="100"
+            height="100"
+        /></a>
+        <h1>Lulu-hamsterin verkkosivusto</h1>
+      </div>
 
-        <div class="nav">
-            <ul>
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="lulu.html">Lulu</a></li>
-                <li><a href="terraario.html">Terraario</a></li>
-                <li class="active"><a href="ravinnot.html">Ravinnot</a></li>
-                <li><a href="ottakaa_yhteytta.html">Ottakaa yhteyttä</a></li>
-            </ul>
-        </div>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="lulu.html">Lulu</a></li>
+          <li><a href="terraario.html">Terraario</a></li>
+          <li class="active"><a href="ravinnot.html">Ravinnot</a></li>
+          <li><a href="ottakaa_yhteytta.html">Ottakaa yhteyttä</a></li>
+        </ul>
+      </div>
 
-        <div class="main">
-            <div class="grid">
-                <article>
-                    <h3>Auringonkukansiemenet</h3>
-                <img src="media/ravinnot/auringonkukansiemenet.jpg" alt="Kuva auringonkukansiemenistä, jotka ovat hamstereiden suosikkiherkku." width="400" height="300" class="round">
-                <p>Auringonkukansiemenet ovat hamstereiden suosikkiherkku. 
-                    Ne ovat maukkaita ja ravitsevia, mutta niitä tulisi antaa vain satunnaisesti, 
-                    koska ne sisältävät paljon rasvaa.</p>
-                </article>
-                <article>
-                    <h3>Hernehiutaleet</h3>
-                    <img src="media/ravinnot/hernehiutaleet.jpg" alt="Kuva hernehiutaleista, joita hamstereille voi antaa." width="400" height="300" class="round">
-                <p>Hernehiutaleet ovat myös hyvä lisä hamstereiden ruokavalioon. 
-                    Ne tarjoavat proteiinia ja kuitua, mutta niitä tulisi antaa kohtuudella.</p>
-                </article>
-                <article>
-                    <h3>Jauhomatoja</h3>
-                    <img src="media/ravinnot/jauhomatoja.jpg" alt="Kuva jauhomadoista, joita hamstereille voi antaa." width="400" height="300" class="round">
-                <p>Jauhomadot ovat hyvä proteiinin lähde hamstereille. 
-                    Ne voidaan antaa kuivattuina tai elävänä, 
-                    mutta niitä tulisi antaa kohtuudella.</p>
-                </article>
-                <article>
-                    <h3>Nakertelutähkät</h3>
-                    <img src="media/ravinnot/nakertelu_tähkät.jpg" alt="Kuva erilaisista nakertelutähkistä, joita hamstereille voi antaa." width="400" height="300" class="round">
-                <p>Nakertelutähkät ovat hyvä lisä hamstereiden ruokavalioon. 
-                    Ne tarjoavat kuitua ja auttavat pitämään hampaat kunnossa, 
-                    mutta niitä tulisi antaa kohtuudella.</p>
-                </article>
-            </div>
+      <div class="main">
+        <div class="grid">
+          <article>
+            <h3>Auringonkukansiemenet</h3>
+            <img
+              src="media/ravinnot/auringonkukansiemenet.jpg"
+              alt="Kuva auringonkukansiemenistä, jotka ovat hamstereiden suosikkiherkku."
+              width="400"
+              height="300"
+              class="round"
+            />
+            <p>
+              Auringonkukansiemenet ovat hamstereiden suosikkiherkku. Ne ovat maukkaita ja ravitsevia, mutta niitä
+              tulisi antaa vain satunnaisesti, koska ne sisältävät paljon rasvaa.
+            </p>
+          </article>
+          <article>
+            <h3>Hernehiutaleet</h3>
+            <img
+              src="media/ravinnot/hernehiutaleet.jpg"
+              alt="Kuva hernehiutaleista, joita hamstereille voi antaa."
+              width="400"
+              height="300"
+              class="round"
+            />
+            <p>
+              Hernehiutaleet ovat myös hyvä lisä hamstereiden ruokavalioon. Ne tarjoavat proteiinia ja kuitua, mutta
+              niitä tulisi antaa kohtuudella.
+            </p>
+          </article>
+          <article>
+            <h3>Jauhomatoja</h3>
+            <img
+              src="media/ravinnot/jauhomatoja.jpg"
+              alt="Kuva jauhomadoista, joita hamstereille voi antaa."
+              width="400"
+              height="300"
+              class="round"
+            />
+            <p>
+              Jauhomadot ovat hyvä proteiinin lähde hamstereille. Ne voidaan antaa kuivattuina tai elävänä, mutta niitä
+              tulisi antaa kohtuudella.
+            </p>
+          </article>
+          <article>
+            <h3>Nakertelutähkät</h3>
+            <img
+              src="media/ravinnot/nakertelu_tähkät.jpg"
+              alt="Kuva erilaisista nakertelutähkistä, joita hamstereille voi antaa."
+              width="400"
+              height="300"
+              class="round"
+            />
+            <p>
+              Nakertelutähkät ovat hyvä lisä hamstereiden ruokavalioon. Ne tarjoavat kuitua ja auttavat pitämään hampaat
+              kunnossa, mutta niitä tulisi antaa kohtuudella.
+            </p>
+          </article>
+        </div>
         <a href="terraario.html" class="previous">&laquo; Previous</a>
         <a href="ottakaa_yhteytta.html" class="next">Next &raquo;</a>
+      </div>
 
-        </div>
-
-        <div class="footer">
-            <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>
-        </div>
-
-
-
-
-
-
+      <div class="footer">
+        <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>

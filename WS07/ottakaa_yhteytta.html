@@ -1,52 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
-    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-    * {box-sizing:border-box}
+      * {
+        box-sizing: border-box;
+      }
 
-   
+      iframe {
+        position: relative;
+        max-width: 450px;
+        margin: 2% auto;
+        border: 2px solid grey;
+      }
 
-    iframe {
-    position: relative;
-    max-width: 450px;
-    margin: 2% auto;
-    border: 2px solid grey;
-    }
-
-    .form {
+      .form {
         margin-top: 2%;
         background-color: white;
         padding: 2%;
-    }
-    .form h2 {
+      }
+      .form h2 {
         text-align: center;
         font-size: 1.5em;
         margin-bottom: 20px;
         font-family: "Roboto Slab", serif;
-    }
+      }
 
-    fieldset, input, select, textarea {
+      fieldset,
+      input,
+      select,
+      textarea {
         margin-bottom: 2%;
         font-family: "Roboto Slab", serif;
-    }
+      }
 
-    fieldset legend {
+      fieldset legend {
         font-size: 1.25em;
         font-weight: bold;
         font-family: "Roboto Slab", serif;
-    }
-    label {
+      }
+      label {
         display: block;
         padding-top: 3%;
         font-family: "Roboto Slab", serif;
-    }
-    .form .submit-button {
+      }
+      .form .submit-button {
         display: block;
         margin: 0 auto;
         padding: 2%;
@@ -55,160 +60,164 @@
         border-radius: 10px;
         font-size: 1.5em;
         font-family: "Roboto Slab", serif;
-    }
-    .form .submit-button:hover {
+      }
+      .form .submit-button:hover {
         background-color: #170781;
         color: white;
         font-family: "Roboto Slab", serif;
-    }
+      }
 
-    .form {
+      .form {
         width: auto;
-    }
-    .form-grid {
+      }
+      .form-grid {
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 20px;
-    }
-    .form  .submit-button {
+      }
+      .form .submit-button {
         grid-column: 1 / span 3;
-    }
+      }
 
-   
-img {    display: block;
-    margin: 0 auto;
-}
+      img {
+        display: block;
+        margin: 0 auto;
+      }
 
-a {
-  text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-    font-family: "Roboto Slab", serif;
-}
-a:hover {
-    background-color: antiquewhite;
-    color: black;
-    font-weight: bold;
-    border:solid black;
-    font-family: "Roboto Slab", serif;
-}
-.previous {
-  background-color: black;
-    color: white;
-    font-family: "Francois One", sans-serif;
-}
-p {
-    font-family: "Roboto Slab", serif; 
-    font-size: 1em;
-    margin: 10px;
-}
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        font-family: "Roboto Slab", serif;
+      }
+      a:hover {
+        background-color: antiquewhite;
+        color: black;
+        font-weight: bold;
+        border: solid black;
+        font-family: "Roboto Slab", serif;
+      }
+      .previous {
+        background-color: black;
+        color: white;
+        font-family: "Francois One", sans-serif;
+      }
+      p {
+        font-family: "Roboto Slab", serif;
+        font-size: 1em;
+        margin: 10px;
+      }
 
-h2 {
-    font-family: "Roboto Slab", serif; 
-    font-size: 1.5em;
-    margin: 10px;      
-}
-h4 {
-    font-family: "Roboto Slab", serif; 
-    font-size: 1.25em; 
-    margin: 10px;
-}
-
+      h2 {
+        font-family: "Roboto Slab", serif;
+        font-size: 1.5em;
+        margin: 10px;
+      }
+      h4 {
+        font-family: "Roboto Slab", serif;
+        font-size: 1.25em;
+        margin: 10px;
+      }
     </style>
     <title>Lulu-hamsterin verkkosivusto</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="grid-container">
-        <div class="header">
-            <a href="index.html"><img src="media/lulu/lulu_taulu.jpg" alt="Kuva Lulu-hamsterista kotona, Lulu on kämmenellä. Se on logo." width="100" height="100"></a>
-            <h1>Lulu-hamsterin verkkosivusto</h1>
+      <div class="header">
+        <a href="index.html"
+          ><img
+            src="media/lulu/lulu_taulu.jpg"
+            alt="Kuva Lulu-hamsterista kotona, Lulu on kämmenellä. Se on logo."
+            width="100"
+            height="100"
+        /></a>
+        <h1>Lulu-hamsterin verkkosivusto</h1>
+      </div>
+
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="lulu.html">Lulu</a></li>
+          <li><a href="terraario.html">Terraario</a></li>
+          <li><a href="ravinnot.html">Ravinnot</a></li>
+          <li class="active"><a href="ottakaa_yhteytta.html">Ottakaa yhteyttä</a></li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div id="content">
+          <h2>Ottakaa yhteyttä</h2>
+          <h4>
+            Voitte ottaa yhteyttä sähköpostitse osoitteeseen
+            <a href="mailto:info@lulu-hamsteri.com">info@lulu-hamsteri.com</a>
+          </h4>
+          <h4>Puhelimitse numeroon 123-456-7890.</h4>
+          <h4>Voitte käydä myös henkilökohtaisesti osoitteessa: Vanha maantie 9, 02650 Espoo</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.4653963645887!2d24.80266447733582!3d60.222676239194854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df67d76206adb%3A0x5dfca701bdf6500c!2sVanha%20maantie%209%2C%2002650%20Espoo!5e0!3m2!1sen!2sfi!4v1776424592153!5m2!1sen!2sfi"
+            class="map"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <h4>Voitte myös täyttää alla olevan lomakkeen:</h4>
         </div>
+      </div>
 
-        <div class="nav">
-            <ul>
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="lulu.html">Lulu</a></li>
-                <li><a href="terraario.html">Terraario</a></li>
-                <li><a href="ravinnot.html">Ravinnot</a></li>
-                <li class="active"><a href="ottakaa_yhteytta.html">Ottakaa yhteyttä</a></li>
-            </ul>
-        </div>
+      <div class="form">
+        <h2>Ottakaa yhteyttä</h2>
 
-        <div class="main">
-            <div id="content">
-                <h2>Ottakaa yhteyttä</h2>
-                <h4>Voitte ottaa yhteyttä sähköpostitse osoitteeseen <a href="mailto:info@lulu-hamsteri.com">info@lulu-hamsteri.com</a></h4> 
-                <h4>Puhelimitse numeroon 123-456-7890.</h4>
-                <h4>Voitte käydä myös henkilökohtaisesti osoitteessa: Vanha maantie 9, 02650 Espoo</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.4653963645887!2d24.80266447733582!3d60.222676239194854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df67d76206adb%3A0x5dfca701bdf6500c!2sVanha%20maantie%209%2C%2002650%20Espoo!5e0!3m2!1sen!2sfi!4v1776424592153!5m2!1sen!2sfi" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <h4>Voitte myös täyttää alla olevan lomakkeen:</h4>
-            </div>
+        <form>
+          <fieldset>
+            <legend>Yhteystiedot</legend>
+            <label for="fName">Etunimi:</label>
+            <input type="text" id="fName" name="fName" required />
 
-        </div>
+            <label for="lName">Sukunimi:</label>
+            <input type="text" id="lName" name="lName" required />
 
-            <div class="form">
-                <h2>Ottakaa yhteyttä</h2>
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required />
 
-                <form>
-                    <fieldset>
-                        <legend>Yhteystiedot</legend>
-                        <label for="fName">Etunimi:</label>
-                        <input type="text" id="fName" name="fName" required>
+            <label for="phone">Puhelin:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </fieldset>
 
-                        <label for="lName">Sukunimi:</label>
-                        <input type="text" id="lName" name="lName" required>
+          <fieldset>
+            <legend>Lisätiedot</legend>
+            <p>Haluaisin lisätietoja seuraavista aiheista:</p>
+            <input type="checkbox" id="lulu" name="interest" value="lulu" />
+            <label for="lulu">Lulu-hamsteristä</label><br />
+            <input type="checkbox" id="terraario" name="interest" value="terraario" />
+            <label for="terraario">Lulun terraariosta</label><br />
+            <input type="checkbox" id="ravinnot" name="interest" value="ravinnot" />
+            <label for="ravinnot">Lulun ravinnoista</label><br />
+            <input type="checkbox" id="muu" name="interest" value="muu" />
+            <label for="muu">Muu</label><br />
+          </fieldset>
 
-                        <label for="email">Sähköposti:</label>
-                        <input type="email" id="email" name="email" required>
+          <fieldset>
+            <legend>Miten löysitte meidät?</legend>
+            <label for="reference">Valitse lähde:</label>
+            <select id="reference" name="reference">
+              <option value="google">Google</option>
+              <option value="facebook">Facebook</option>
+              <option value="instagram">Instagram</option>
+              <option value="muu">Muu</option>
+            </select>
 
-                        <label for="phone">Puhelin:</label>
-                        <input type="tel" id="phone" name="phone" required>
+            <label for="questions">Kysymykset tai kommentit:</label>
+            <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+          </fieldset>
+          <input type="submit" value="Lähetä" class="submit-button" />
+        </form>
 
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Lisätiedot</legend>
-                        <p>Haluaisin lisätietoja seuraavista aiheista:</p>
-                        <input type="checkbox" id="lulu" name="interest" value="lulu">
-                        <label for="lulu">Lulu-hamsteristä</label><br>
-                        <input type="checkbox" id="terraario" name="interest" value="terraario">
-                        <label for="terraario">Lulun terraariosta</label><br>
-                        <input type="checkbox" id="ravinnot" name="interest" value="ravinnot">
-                        <label for="ravinnot">Lulun ravinnoista</label><br>
-                        <input type="checkbox" id="muu" name="interest" value="muu">
-                        <label for="muu">Muu</label><br>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Miten löysitte meidät?</legend>
-                        <label for="reference">Valitse lähde:</label>
-                        <select id="reference" name="reference">
-                            <option value="google">Google</option>
-                            <option value="facebook">Facebook</option>
-                            <option value="instagram">Instagram</option>
-                            <option value="muu">Muu</option>
-                        </select>
-
-                        <label for="questions">Kysymykset tai kommentit:</label>
-                        <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
-
-                    </fieldset>
-                    <input type="submit" value="Lähetä" class="submit-button">
-
-                </form>
-
-            <a href="ravinnot.html" class="previous">&laquo; Previous</a>
-            </div>
-<div class="footer">
-    <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>
-</div>
-
-
-
-
-
-
-</div>
-</body>
+        <a href="ravinnot.html" class="previous">&laquo; Previous</a>
+      </div>
+      <div class="footer">
+        <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>
+      </div>
+    </div>
+  </body>
 </html>

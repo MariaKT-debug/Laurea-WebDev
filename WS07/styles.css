@@ -1,99 +1,103 @@
-body, header, nav, main, footer, h1, div, img, ul, iframe, figure, figcaption, section, content, 
-article, aside, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+ul,
+iframe,
+figure,
+figcaption,
+section,
+content,
+article,
+aside,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
-
 @media (max-width: 900px) {
-    .grid-container {
-        grid-template-areas: 
-            'header'
-            'nav'
-            'main'
-            'footer';
-        grid-template-columns: 1fr;
-    }
+  .grid-container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    .grid-container {
-        .nav-links {
-            display: block;
-            
-        }
+  .grid-container {
+    .nav-links {
+      display: block;
     }
+  }
 }
 
 @media (max-with: 480px) {
-    .grid-container {
-        .nav-links {
-            display: block;
-        }
+  .grid-container {
+    .nav-links {
+      display: block;
     }
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    .grid-container {
-        .nav-links {
-            display: block;
-        }
+  .grid-container {
+    .nav-links {
+      display: block;
     }
+  }
 }
 
 /*@media speech for screen readers */
 @media speech {
-    .grid-container {
-        grid-template-areas: 
-            'header'
-            'nav'
-            'main'
-            'footer';
-        grid-template-columns: 1fr;
-    }
+  .grid-container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+  }
 }
 @media (orientation: portrait) {
-    .grid-container {
-        grid-template-areas: 
-            'header'
-            'nav'
-            'main'
-            'footer';
-        grid-template-columns: 1fr;
-    }
+  .grid-container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+  }
 }
-
-
-
 
 .grid-container {
-    display: grid;
-    grid-template-areas: 
-        'header'
-        'nav'
-        'main'
-        'footer';
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
 }
 
-
-
-
-
-
-
- .francois-one-regular {
+.francois-one-regular {
   font-family: "Francois One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-    .roboto-slab-responsive {
+.roboto-slab-responsive {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -101,82 +105,74 @@ article, aside, audio, video {
 }
 
 body {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
-
-
-
 .header {
-    padding: 80px;
-    text-align: center;
-    background: antiquewhite;
-    color: black;
+  padding: 80px;
+  text-align: center;
+  background: antiquewhite;
+  color: black;
 }
 .header h1 {
   font-size: 40px;
-  font-family: "Francois One", sans-serif;  
+  font-family: "Francois One", sans-serif;
 }
 
 h2 {
-    font-size: 2em;
-    font-family: "Francois One", sans-serif;
-    text-align: center;
-    margin: 1em 0;
+  font-size: 2em;
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  margin: 1em 0;
 }
 
 p {
-    font-size: 1.2em;
-    font-family: "Roboto Slab", serif;
-    margin: 1em 0;
+  font-size: 1.2em;
+  font-family: "Roboto Slab", serif;
+  margin: 1em 0;
 }
 
 .nav {
-    width: 100%;
-    float: center;
-    margin: 1em 3em 0 0;
+  width: 100%;
+  float: center;
+  margin: 1em 3em 0 0;
 }
 
 .nav ul {
-    list-style-type: none;
-    margin: 0;
-    text-align: center;
-    font-family: "Francois One", sans-serif;
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  font-family: "Francois One", sans-serif;
 }
 
 .nav li {
-    display: inline-block;
-    font-size: 1.5em;
-    font-family: "Francois One", sans-serif;
-    font-weight: bold;
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: "Francois One", sans-serif;
+  font-weight: bold;
 }
 
 .nav li a {
-    display: block;
-    color:rgb(13, 15, 14);
-    text-align:center;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    font-family: "Francois One", sans-serif;
+  display: block;
+  color: rgb(13, 15, 14);
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-family: "Francois One", sans-serif;
 }
 .nav li a:hover {
-    background-color: rgb(13, 15, 14);
-    color: white;
-    font-family: "Francois One", sans-serif;
+  background-color: rgb(13, 15, 14);
+  color: white;
+  font-family: "Francois One", sans-serif;
 }
 .nav li.active a {
-    background-color: rgb(13, 15, 14);
-    color: white;
-    font-family: "Francois One", sans-serif;
+  background-color: rgb(13, 15, 14);
+  color: white;
+  font-family: "Francois One", sans-serif;
 }
-
-
 
 .footer {
-    font-size: 1em;
-    text-align: center;
-    padding: 0 1em;
+  font-size: 1em;
+  text-align: center;
+  padding: 0 1em;
 }
-
-
-

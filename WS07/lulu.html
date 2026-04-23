@@ -1,227 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-    * {box-sizing:border-box}
-    .row {  
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap; 
-  flex-wrap: wrap;
-}
-.side {
-  -ms-flex: 10%; 
-  flex: 10%;
-  background-color: antiquewhite;
-  padding: 20px;
-}
+      * {
+        box-sizing: border-box;
+      }
+      .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+      .side {
+        -ms-flex: 10%;
+        flex: 10%;
+        background-color: antiquewhite;
+        padding: 20px;
+      }
 
+      .card-container {
+        height: 150px;
+        perspective: 600;
+        position: relative;
+        width: 150px;
+      }
+      .card {
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+        width: 100%;
+      }
+      .card:hover {
+        transform: rotateY(180deg);
+      }
+      .card .side {
+        backface-visibility: hidden;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
+      .card .back {
+        transform: rotateY(180deg);
+      }
 
-.card-container {
-  height: 150px;
-  perspective: 600;
-  position: relative;
-  width: 150px;
-}
-.card {
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 100%;
-}
-.card:hover {
-  transform: rotateY(180deg);
-}
-.card .side {
-  backface-visibility: hidden;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-.card .back {
-  transform: rotateY(180deg);
-}
+      table {
+        font-family: "Roboto Slab", serif;
+        border-collapse: collapse;
+        width: 40%;
+        margin: 0 auto;
+      }
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+        font-family: "Roboto Slab", serif;
+      }
+      td,
+      th {
+        border: 2px solid #211f1f;
+        text-align: center;
+        padding: 2%;
+        font-family: "Roboto Slab", serif;
+      }
+      th {
+        background-color: #211f1f;
+        color: white;
+        font-size: 1.2em;
+        font-family: "Roboto Slab", serif;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+        font-family: "Roboto Slab", serif;
+      }
+      li {
+        font-family: "Francois One", sans-serif;
+        font-size: 1em;
+        margin: 10px;
+      }
+      ul li {
+        list-style-type: square;
+        margin-left: 20px;
+        font-family: "Francois One", sans-serif;
+      }
+      p {
+        font-family: "Roboto Slab", serif;
+        font-size: 1em;
+        margin: 10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+      }
 
-table {
-  font-family: "Roboto Slab", serif;
-  border-collapse: collapse;
-  width: 40%;
-  margin: 0 auto;
-}
-caption {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 1%;
-  font-family: "Roboto Slab", serif;
-}
-td, th {
-  border: 2px solid #211f1f;
-  text-align: center;
-  padding: 2%;
-  font-family: "Roboto Slab", serif;
-}
-th {
-  background-color: #211f1f;
-  color: white;
-  font-size: 1.2em;
-  font-family: "Roboto Slab", serif;
-}
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-  font-family: "Roboto Slab", serif;
-}
-li {
-    font-family: "Francois One", sans-serif;
-    font-size: 1em;
-    margin: 10px;
-}
-ul li{
-    list-style-type: square;
-    margin-left: 20px;
-    font-family: "Francois One", sans-serif;
-    
-}
-p {
-    font-family: "Roboto Slab", serif;
-    font-size: 1em;
-    margin: 10px;
-}
-img {
-    display: block;
-    margin: 0 auto;
-}
-a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
+      a:hover {
+        background-color: antiquewhite;
+        color: black;
+        font-weight: bold;
+        border: solid black;
+      }
 
-a:hover {
-  background-color: antiquewhite;
-  color: black;
-  font-weight: bold;
-  border:solid black;
-}
+      .previous {
+        background-color: black;
+        color: white;
+        font-family: "Francois One", sans-serif;
+      }
 
-.previous {
-  background-color: black;
-  color: white;
-  font-family: "Francois One", sans-serif;
-}
-
-.next {
-  background-color: black;
-  color: white;
-  font-family: "Francois One", sans-serif;
-}
-
-</style>
+      .next {
+        background-color: black;
+        color: white;
+        font-family: "Francois One", sans-serif;
+      }
+    </style>
     <title>Lulu-hamsterin verkkosivusto</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">
+        <a href="index.html"
+          ><img
+            src="media/lulu/lulu_taulu.jpg"
+            alt="Kuva Lulu-hamsterista kotona, Lulu on kämmenellä. Se on logo."
+            width="100"
+            height="100"
+        /></a>
+        <h1>Lulu-hamsterin verkkosivusto</h1>
+      </div>
 
-<div class="grid-container">
-    <div class="header">
-        <a href="index.html"><img src="media/lulu/lulu_taulu.jpg" alt="Kuva Lulu-hamsterista kotona, Lulu on kämmenellä. Se on logo." width="100" height="100"></a>
-        <h1>
-            Lulu-hamsterin verkkosivusto
-        </h1>
-    </div>
-
-    <div class="nav">
+      <div class="nav">
         <ul>
-            <li><a href="index.html">Etusivu</a></li>
-            <li class="active"><a href="lulu.html">Lulu</a></li>
-            <li><a href="terraario.html">Terraario</a></li>
-            <li><a href="ravinnot.html">Ravinnot</a></li>
-            <li><a href="ottakaa_yhteytta.html">Ottakaa yhteyttä</a></li>
+          <li><a href="index.html">Etusivu</a></li>
+          <li class="active"><a href="lulu.html">Lulu</a></li>
+          <li><a href="terraario.html">Terraario</a></li>
+          <li><a href="ravinnot.html">Ravinnot</a></li>
+          <li><a href="ottakaa_yhteytta.html">Ottakaa yhteyttä</a></li>
         </ul>
-    </div>
+      </div>
 
-    
-    <div class="row">
+      <div class="row">
         <div class="side">
-            <div class="card-container">
-                <div class="card">
-                    <div class="side"><img src="media/lulu/lulu_taulu.jpg" alt="Piirros Lulu-hamsterista, Lulu on kädessä." width="400" height="300"></div>
-                    <div class="side back"><img src="media/lulu/lulu_kämmenessä.jpg" alt="Lulu on kädessä." width="400" height="300"></div>
+          <div class="card-container">
+            <div class="card">
+              <div class="side">
+                <img
+                  src="media/lulu/lulu_taulu.jpg"
+                  alt="Piirros Lulu-hamsterista, Lulu on kädessä."
+                  width="400"
+                  height="300"
+                />
+              </div>
+              <div class="side back">
+                <img src="media/lulu/lulu_kämmenessä.jpg" alt="Lulu on kädessä." width="400" height="300" />
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-        
-       
 
-        <div class="main" style="margin: 20px; padding: 20px;">
-            <h2>Lulu Kaszaki -hamsteri</h2>
-            <p>Se on syntynyt vuonna 2024 kesällä.</p>
-            <p>Lulu on kääpiöhamsteri, joka on hyvin utelias 
-            ja leikkisä.</p>
-            <p>Hän rakastaa juosta juoksupyörässä ja tutkia ympäristöään.</p>
-            <p>Lulu on myös erittäin sosiaalinen ja nauttii ihmisten seurasta.</p>
-            <p>Lulu on dzungarianhamsteri, talvikko</p>
-            <p>Hänen turkkinsa on helmiäissafiiri värinen.</p>
+        <div class="main" style="margin: 20px; padding: 20px">
+          <h2>Lulu Kaszaki -hamsteri</h2>
+          <p>Se on syntynyt vuonna 2024 kesällä.</p>
+          <p>Lulu on kääpiöhamsteri, joka on hyvin utelias ja leikkisä.</p>
+          <p>Hän rakastaa juosta juoksupyörässä ja tutkia ympäristöään.</p>
+          <p>Lulu on myös erittäin sosiaalinen ja nauttii ihmisten seurasta.</p>
+          <p>Lulu on dzungarianhamsteri, talvikko</p>
+          <p>Hänen turkkinsa on helmiäissafiiri värinen.</p>
         </div>
 
         <table>
-            <caption>Lulun aikataulu</caption>
-            <tr>
-                <th>Aika</th>
-                <th>Toiminta</th>
-                <th>Nukkuminen</th>
-                <th>Aktivisuus</th>
-            </tr>
-            <tr>
-                <td>klo 6-18</td>
-                <td></td>
-                <td>kyllä</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>klo 18-21</td>
-                <td>kyllä</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>klo 21-2</td>
-                <td></td>
-                <td></td>
-                <td>kyllä</td>
-            </tr>
-            <tr>
-                <td>klo 2-6</td>
-                <td></td>
-                <td></td>
-                <td>kyllä</td>
-            </tr>
+          <caption>
+            Lulun aikataulu
+          </caption>
+          <tr>
+            <th>Aika</th>
+            <th>Toiminta</th>
+            <th>Nukkuminen</th>
+            <th>Aktivisuus</th>
+          </tr>
+          <tr>
+            <td>klo 6-18</td>
+            <td></td>
+            <td>kyllä</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>klo 18-21</td>
+            <td>kyllä</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>klo 21-2</td>
+            <td></td>
+            <td></td>
+            <td>kyllä</td>
+          </tr>
+          <tr>
+            <td>klo 2-6</td>
+            <td></td>
+            <td></td>
+            <td>kyllä</td>
+          </tr>
         </table>
 
         <ul>
-            <li>Hamsteri nukkuu päivän aikana jopa 14 tuntia.</li>
-            <li>Paras aika käsitellä ja leikittää hamsteria on iltaisin, kun se on luonnostaan hereillä.</li>
-            <li>Talvisin hamsteri saattaa herätä hieman aikaisemmin kuin kesällä, sillä luontainen rytmi seuraa auringonlaskua.</li>
-            <li>Hamsteri on helppohoitoinen, kunhan sen annetaan noudattaa omaa yöaktiivista rytmiään.</li>
+          <li>Hamsteri nukkuu päivän aikana jopa 14 tuntia.</li>
+          <li>Paras aika käsitellä ja leikittää hamsteria on iltaisin, kun se on luonnostaan hereillä.</li>
+          <li>
+            Talvisin hamsteri saattaa herätä hieman aikaisemmin kuin kesällä, sillä luontainen rytmi seuraa
+            auringonlaskua.
+          </li>
+          <li>Hamsteri on helppohoitoinen, kunhan sen annetaan noudattaa omaa yöaktiivista rytmiään.</li>
         </ul>
         <a href="index.html" class="previous">&laquo; Previous</a>
         <a href="terraario.html" class="next">Next &raquo;</a>
-    </div>
+      </div>
 
-    <div class="footer">
+      <div class="footer">
         <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>
+      </div>
     </div>
-</div>
-
-
-
-
-
-
-
-
-</body>
+  </body>
 </html>
