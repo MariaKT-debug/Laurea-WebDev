@@ -11,6 +11,9 @@
       * {
         box-sizing: border-box;
       }
+      .container {
+        display: grid;
+      }
 
       .card-container {
         height: 150px;
@@ -120,12 +123,15 @@
           grid-column: col-start / span 12;
           grid-row: 1 / 8;
         }
-
+        .nav {
+          grid-column: col-start / span 12;
+          grid-row: 2 / 8;
+        }
         .card-container {
           grid-column: col-start / span 3;
           grid-row: 2 /8;
         }
-        .main {
+        .content {
           grid-column: col-start 5 / span 3;
           grid-row: 3 / 8;
         }
@@ -139,13 +145,13 @@
         }
 
         .previous {
-          grid-column: col-start 1 / span 1;
+          grid-column: col-start / span 1;
         }
         .next {
           grid-column: col-start 12 / span 1;
         }
         .footer {
-          grid-column: col-start 1 / span 12;
+          grid-column: col-start / span 12;
         }
       }
     </style>
@@ -193,7 +199,7 @@
         </div>
       </div>
 
-      <div class="main" style="margin: 20px; padding: 20px">
+      <div class="content">
         <h2>Lulu Kaszaki -hamsteri</h2>
         <p>Se on syntynyt vuonna 2024 kesällä.</p>
         <p>Lulu on kääpiöhamsteri, joka on hyvin utelias ja leikkisä.</p>
