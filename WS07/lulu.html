@@ -50,20 +50,20 @@
         padding: 1%;
         font-family: "Roboto Slab", serif;
       }
-      td,
-      th {
+      .table td {
         border: 2px solid #211f1f;
         text-align: center;
         padding: 2%;
         font-family: "Roboto Slab", serif;
       }
-      th {
+      .table th {
         background-color: #211f1f;
         color: white;
         font-size: 1.2em;
         font-family: "Roboto Slab", serif;
+        border: 2px solid #211f1f;
       }
-      tr:nth-child(even) {
+      .table tr:nth-child(even) {
         background-color: #f2f2f2;
         font-family: "Roboto Slab", serif;
       }
@@ -110,49 +110,42 @@
         color: white;
         font-family: "Francois One", sans-serif;
       }
-      .container {
-        display: grid;
-        grid-template-columns: repeat(12, [col-start] 1fr);
-        gap: 20px;
-      }
 
       @media (min-width: 768px) {
         .logo {
-          grid-column: 1 / span 1;
-          grid-row: 1 / span 1;
+          grid-column: col-start / span 1;
+          grid-row: 1 / 8;
         }
         .header {
-          grid-column: 1 / span 12;
-          grid-row: 2 / span 1;
+          grid-column: col-start / span 12;
+          grid-row: 1 / 8;
         }
-        .nav ul li a {
-          grid-column: 1 / span 12;
-          grid-row: 3 / span 1;
-        }
+
         .card-container {
-          grid-column: 1 / span 3;
-          grid-row: 4 / span 3;
+          grid-column: col-start / span 3;
+          grid-row: 2 /8;
         }
         .main {
-          grid-column: 5 / span 3;
-          grid-row: 4 / span 3;
+          grid-column: col-start 5 / span 3;
+          grid-row: 3 / 8;
         }
         .table {
-          grid-column: 9 / span 4;
-          grid-row: 4 / span 3;
+          grid-column: col-start 9 / span 4;
+          grid-row: 2 / 8;
+        }
+        .ul {
+          grid-column: col-start 9 / span 4;
+          grid-row: 2 / 8;
         }
 
         .previous {
-          grid-column: 1 / span 1;
-          grid-row: 8 / span 1;
+          grid-column: col-start 1 / span 1;
         }
         .next {
-          grid-column: 12 / span 1;
-          grid-row: 8 / span 1;
+          grid-column: col-start 12 / span 1;
         }
         .footer {
-          grid-column: 1 / span 12;
-          grid-row: 9 / span 1;
+          grid-column: col-start 1 / span 12;
         }
       }
     </style>
@@ -211,39 +204,41 @@
       </div>
 
       <div class="table">
-        <caption>
-          Lulun aikataulu
-        </caption>
-        <tr>
-          <th>Aika</th>
-          <th>Toiminta</th>
-          <th>Nukkuminen</th>
-          <th>Aktivisuus</th>
-        </tr>
-        <tr>
-          <td>klo 6-18</td>
-          <td></td>
-          <td>kyllä</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>klo 18-21</td>
-          <td>kyllä</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>klo 21-2</td>
-          <td></td>
-          <td></td>
-          <td>kyllä</td>
-        </tr>
-        <tr>
-          <td>klo 2-6</td>
-          <td></td>
-          <td></td>
-          <td>kyllä</td>
-        </tr>
+        <table>
+          <caption>
+            Lulun aikataulu
+          </caption>
+          <tr>
+            <th>Aika</th>
+            <th>Toiminta</th>
+            <th>Nukkuminen</th>
+            <th>Aktivisuus</th>
+          </tr>
+          <tr>
+            <td>klo 6-18</td>
+            <td></td>
+            <td>kyllä</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>klo 18-21</td>
+            <td>kyllä</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>klo 21-2</td>
+            <td></td>
+            <td></td>
+            <td>kyllä</td>
+          </tr>
+          <tr>
+            <td>klo 2-6</td>
+            <td></td>
+            <td></td>
+            <td>kyllä</td>
+          </tr>
+        </table>
       </div>
 
       <div class="ul">
