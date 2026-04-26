@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=optional"
       rel="stylesheet"
     />
+
+    <link href="styles.css" rel="stylesheet" />
     <style>
-      * {
-        box-sizing: border-box;
-      }
       article {
         padding: 2%;
         font-family: "Roboto Slab", serif;
@@ -25,6 +27,7 @@
         margin: 0 auto;
         display: block;
         position: relative;
+        max-width: 50%;
       }
       article p {
         text-align: center;
@@ -33,16 +36,15 @@
         display: block;
         font-family: "Roboto Slab", serif;
       }
-      img {
-        display: block;
-        margin: 0 auto;
-      }
-      a {
+
+      .previous a,
+      .next a {
         text-decoration: none;
         display: inline-block;
         padding: 8px 16px;
       }
-      a:hover {
+      .previous a:hover,
+      .next a:hover {
         background-color: antiquewhite;
         color: black;
         font-weight: bold;
@@ -62,10 +64,11 @@
     </style>
 
     <title>Lulu-hamsterin verkkosivusto</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <div class="grid-container">
+      <!-- header -->
       <div class="header">
         <a href="index.html"
           ><img
@@ -77,6 +80,7 @@
         <h1>Lulu-hamsterin verkkosivusto</h1>
       </div>
 
+      <!-- navigation bar -->
       <div class="nav">
         <ul>
           <li><a href="index.html">Etusivu</a></li>
@@ -87,6 +91,7 @@
         </ul>
       </div>
 
+      <!-- main content -->
       <div class="main">
         <div class="grid">
           <article>
@@ -94,9 +99,6 @@
             <img
               src="media/ravinnot/auringonkukansiemenet.jpg"
               alt="Kuva auringonkukansiemenistä, jotka ovat hamstereiden suosikkiherkku."
-              width="400"
-              height="300"
-              class="round"
             />
             <p>
               Auringonkukansiemenet ovat hamstereiden suosikkiherkku. Ne ovat maukkaita ja ravitsevia, mutta niitä
@@ -105,13 +107,7 @@
           </article>
           <article>
             <h3>Hernehiutaleet</h3>
-            <img
-              src="media/ravinnot/hernehiutaleet.jpg"
-              alt="Kuva hernehiutaleista, joita hamstereille voi antaa."
-              width="400"
-              height="300"
-              class="round"
-            />
+            <img src="media/ravinnot/hernehiutaleet.jpg" alt="Kuva hernehiutaleista, joita hamstereille voi antaa." />
             <p>
               Hernehiutaleet ovat myös hyvä lisä hamstereiden ruokavalioon. Ne tarjoavat proteiinia ja kuitua, mutta
               niitä tulisi antaa kohtuudella.
@@ -119,13 +115,7 @@
           </article>
           <article>
             <h3>Jauhomatoja</h3>
-            <img
-              src="media/ravinnot/jauhomatoja.jpg"
-              alt="Kuva jauhomadoista, joita hamstereille voi antaa."
-              width="400"
-              height="300"
-              class="round"
-            />
+            <img src="media/ravinnot/jauhomatoja.jpg" alt="Kuva jauhomadoista, joita hamstereille voi antaa." />
             <p>
               Jauhomadot ovat hyvä proteiinin lähde hamstereille. Ne voidaan antaa kuivattuina tai elävänä, mutta niitä
               tulisi antaa kohtuudella.
@@ -136,9 +126,6 @@
             <img
               src="media/ravinnot/nakertelu_tähkät.jpg"
               alt="Kuva erilaisista nakertelutähkistä, joita hamstereille voi antaa."
-              width="400"
-              height="300"
-              class="round"
             />
             <p>
               Nakertelutähkät ovat hyvä lisä hamstereiden ruokavalioon. Ne tarjoavat kuitua ja auttavat pitämään hampaat
@@ -146,13 +133,16 @@
             </p>
           </article>
         </div>
-        <a href="terraario.html" class="previous">&laquo; Edellinen</a>
-        <a href="ottakaa_yhteytta.html" class="next">Seuraava &raquo;</a>
       </div>
 
+      <!-- footer -->
       <div class="footer">
+        <a href="terraario.html" class="previous">&laquo; Edellinen</a>
+        <a href="ottakaa_yhteytta.html" class="next">Seuraava &raquo;</a>
         <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>
       </div>
+
+      <!--  -->
     </div>
   </body>
 </html>

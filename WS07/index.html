@@ -3,30 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=optional"
       rel="stylesheet"
     />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      video {
-        margin: 0 auto 4%;
-        display: block;
-        border: 2px solid grey;
-      }
-      video::cue {
-        background-image: linear-gradient(to bottom, dimgray, lightgray);
-        color: black;
-      }
 
+    <link href="styles.css" rel="stylesheet" />
+    <style>
       .main {
         clear: right;
         background-color: #fff;
         padding: 200px;
         font-size: 1.25em;
         margin: 20px;
+        text-align: center;
       }
 
       .external-link {
@@ -38,11 +31,8 @@
         color: #086c1c;
         text-decoration: underline;
       }
-      img {
-        display: block;
-        margin: 0 auto;
-      }
-      a {
+
+      /* a {
         text-decoration: none;
         display: inline-block;
         padding: 8px 16px;
@@ -54,20 +44,15 @@
         font-weight: bold;
         border: solid black;
         font-family: "Roboto Slab", serif;
-      }
-
-      .next {
-        background-color: black;
-        color: white;
-        font-family: "Francois One", sans-serif;
-      }
+      } */
     </style>
 
     <title>Lulu-hamsterin verkkosivusto</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <div class="grid-container">
+      <!-- header -->
       <div class="header">
         <a href="index.html"
           ><img
@@ -79,6 +64,7 @@
         <h1>Lulu-hamsterin verkkosivusto</h1>
       </div>
 
+      <!-- navigation bar -->
       <div class="nav">
         <ul>
           <li class="active"><a href="index.html">Etusivu</a></li>
@@ -89,13 +75,13 @@
         </ul>
       </div>
 
-      <div class="main" stlyle="margin: 10px; padding: 20px;">
-        <h2 style="text-align: center">Tervetuloa Lulu-hamsterin verkkosivustolle!</h2>
-        <p style="text-align: center">
+      <!-- main content -->
+      <div class="main">
+        <h2>Tervetuloa Lulu-hamsterin verkkosivustolle!</h2>
+        <p>
           Tämä on Lulu-hamsterin oma verkkosivusto. <br /><br />
           Tästä voit löytää tietoa hänen elämästään, terraariostaan ja ravinnostaan.
         </p>
-
         <video
           controls
           poster="media/etusivu/Lulu.jpg"
@@ -110,19 +96,19 @@
           <track src="captions.vtt" kind="captions" srclang="fi" label="Captions" />
           <track src="descriptions.vtt" kind="descriptions" srclang="fi" label="Descriptions" />
         </video>
-
-        <p style="text-align: center">
+        <p>
           Lisää ja yleisiä tietoja löydät hamstereista muilta nettisivuiltakin kuten esimerkiksi:
           <a href="https://hamsterit.net/" target="_blank" class="external-link">Hamsterit.net</a> tai
           <a href="https://hamsteriyhdistys.fi/" target="_blank" class="external-link">Hamsteriyhdistys.fi</a>.
         </p>
-
-        <a href="lulu.html" class="next">Edellinen &raquo;</a>
       </div>
 
+      <!-- footer -->
       <div class="footer">
         <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>
       </div>
+
+      <!--  -->
     </div>
   </body>
 </html>

@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=optional"
       rel="stylesheet"
     />
+
+    <link href="styles.css" rel="stylesheet" />
     <style>
-      * {
-        box-sizing: border-box;
-      }
       .container {
         display: grid;
       }
@@ -70,51 +72,49 @@
         background-color: #f2f2f2;
         font-family: "Roboto Slab", serif;
       }
-      li {
+
+      #aikataulu-selitys li {
         font-family: "Francois One", sans-serif;
         font-size: 1em;
         margin: 10px;
       }
-      ul li {
+      #aikataulu-selitys ul li {
         list-style-type: square;
         margin-left: 20px;
         font-family: "Francois One", sans-serif;
       }
+
       p {
         font-family: "Roboto Slab", serif;
         font-size: 1em;
         margin: 10px;
       }
-      img {
-        display: block;
-        margin: 0 auto;
-      }
-      a {
+
+      .previous a,
+      .next a {
         text-decoration: none;
         display: inline-block;
         padding: 8px 16px;
       }
-
-      a:hover {
+      .previous a:hover,
+      .next a:hover {
         background-color: antiquewhite;
         color: black;
         font-weight: bold;
         border: solid black;
       }
-
       .previous {
         background-color: black;
         color: white;
         font-family: "Francois One", sans-serif;
       }
-
       .next {
         background-color: black;
         color: white;
         font-family: "Francois One", sans-serif;
       }
 
-      @media (min-width: 768px) {
+      /* @media (min-width: 768px) {
         .logo {
           grid-column: col-start / span 1;
           grid-row: 1 / 8;
@@ -153,14 +153,16 @@
         .footer {
           grid-column: col-start / span 12;
         }
-      }
+      } */
     </style>
+
     <title>Lulu-hamsterin verkkosivusto</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <div class="container">
-      <div class="logo">
+    <div class="grid-container">
+      <!-- header -->
+      <div class="header">
         <a href="index.html"
           ><img
             src="media/lulu/lulu_taulu.jpg"
@@ -168,11 +170,10 @@
             width="100"
             height="100"
         /></a>
-      </div>
-      <div class="header">
         <h1>Lulu-hamsterin verkkosivusto</h1>
       </div>
 
+      <!-- navigation bar -->
       <div class="nav">
         <ul>
           <li><a href="index.html">Etusivu</a></li>
@@ -183,87 +184,92 @@
         </ul>
       </div>
 
-      <div class="card-container">
-        <div class="card">
-          <div class="side">
-            <img
-              src="media/lulu/lulu_taulu.jpg"
-              alt="Piirros Lulu-hamsterista, Lulu on kädessä."
-              width="300"
-              height="200"
-            />
+      <!-- main content -->
+      <div class="main">
+        <div class="card-container">
+          <div class="card">
+            <div class="side">
+              <img
+                src="media/lulu/lulu_taulu.jpg"
+                alt="Piirros Lulu-hamsterista, Lulu on kädessä."
+                width="300"
+                height="200"
+              />
+            </div>
+            <div class="side back">
+              <img src="media/lulu/lulu_kämmenessä.jpg" alt="Lulu on kädessä." width="300" height="200" />
+            </div>
           </div>
-          <div class="side back">
-            <img src="media/lulu/lulu_kämmenessä.jpg" alt="Lulu on kädessä." width="300" height="200" />
-          </div>
+        </div>
+
+        <div class="content">
+          <h2>Lulu Kaszaki -hamsteri</h2>
+          <p>Se on syntynyt vuonna 2024 kesällä.</p>
+          <p>Lulu on kääpiöhamsteri, joka on hyvin utelias ja leikkisä.</p>
+          <p>Hän rakastaa juosta juoksupyörässä ja tutkia ympäristöään.</p>
+          <p>Lulu on myös erittäin sosiaalinen ja nauttii ihmisten seurasta.</p>
+          <p>Lulu on dzungarianhamsteri, talvikko</p>
+          <p>Hänen turkkinsa on helmiäissafiiri värinen.</p>
+        </div>
+
+        <div class="table">
+          <table>
+            <caption>
+              Lulun aikataulu
+            </caption>
+            <tr>
+              <th>Aika</th>
+              <th>Toiminta</th>
+              <th>Nukkuminen</th>
+              <th>Aktivisuus</th>
+            </tr>
+            <tr>
+              <td>klo 6-18</td>
+              <td></td>
+              <td>kyllä</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>klo 18-21</td>
+              <td>kyllä</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>klo 21-2</td>
+              <td></td>
+              <td></td>
+              <td>kyllä</td>
+            </tr>
+            <tr>
+              <td>klo 2-6</td>
+              <td></td>
+              <td></td>
+              <td>kyllä</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="aikataulu-selitys">
+          <ul>
+            <li>Hamsteri nukkuu päivän aikana jopa 14 tuntia.</li>
+            <li>Paras aika käsitellä ja leikittää hamsteria on iltaisin, kun se on luonnostaan hereillä.</li>
+            <li>
+              Talvisin hamsteri saattaa herätä hieman aikaisemmin kuin kesällä, sillä luontainen rytmi seuraa
+              auringonlaskua.
+            </li>
+            <li>Hamsteri on helppohoitoinen, kunhan sen annetaan noudattaa omaa yöaktiivista rytmiään.</li>
+          </ul>
         </div>
       </div>
 
-      <div class="content">
-        <h2>Lulu Kaszaki -hamsteri</h2>
-        <p>Se on syntynyt vuonna 2024 kesällä.</p>
-        <p>Lulu on kääpiöhamsteri, joka on hyvin utelias ja leikkisä.</p>
-        <p>Hän rakastaa juosta juoksupyörässä ja tutkia ympäristöään.</p>
-        <p>Lulu on myös erittäin sosiaalinen ja nauttii ihmisten seurasta.</p>
-        <p>Lulu on dzungarianhamsteri, talvikko</p>
-        <p>Hänen turkkinsa on helmiäissafiiri värinen.</p>
-      </div>
-
-      <div class="table">
-        <table>
-          <caption>
-            Lulun aikataulu
-          </caption>
-          <tr>
-            <th>Aika</th>
-            <th>Toiminta</th>
-            <th>Nukkuminen</th>
-            <th>Aktivisuus</th>
-          </tr>
-          <tr>
-            <td>klo 6-18</td>
-            <td></td>
-            <td>kyllä</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>klo 18-21</td>
-            <td>kyllä</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>klo 21-2</td>
-            <td></td>
-            <td></td>
-            <td>kyllä</td>
-          </tr>
-          <tr>
-            <td>klo 2-6</td>
-            <td></td>
-            <td></td>
-            <td>kyllä</td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="ul">
-        <li>Hamsteri nukkuu päivän aikana jopa 14 tuntia.</li>
-        <li>Paras aika käsitellä ja leikittää hamsteria on iltaisin, kun se on luonnostaan hereillä.</li>
-        <li>
-          Talvisin hamsteri saattaa herätä hieman aikaisemmin kuin kesällä, sillä luontainen rytmi seuraa
-          auringonlaskua.
-        </li>
-        <li>Hamsteri on helppohoitoinen, kunhan sen annetaan noudattaa omaa yöaktiivista rytmiään.</li>
-      </div>
-      <div class="previous">
-        <a href="index.html" class="previous">&laquo; Edellinen</a>
-      </div>
-      <div class="next">
-        <a href="terraario.html" class="next">Seuraava &raquo;</a>
-      </div>
-
       <div class="footer">
+        <div class="previous">
+          <a href="index.html" class="previous">&laquo; Edellinen</a>
+        </div>
+        <div class="next">
+          <a href="terraario.html" class="next">Seuraava &raquo;</a>
+        </div>
         <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>
       </div>
     </div>
