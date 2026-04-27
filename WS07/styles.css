@@ -158,11 +158,12 @@ video::cue {
   font-size: 1em;
   text-align: center;
   padding: 0 1em;
+  font-family: "Roboto Slab", serif;
 }
 .footer a {
   background-color: antiquewhite;
   color: black;
-  font-family: "Francois One", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .footer a {
   text-decoration: none;
