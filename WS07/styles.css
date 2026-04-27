@@ -60,23 +60,6 @@ video::cue {
   color: black;
 }
 
-/* @media (min-width: 900px) {
-  .grid-container {
-    grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
-    grid-template-columns: 1fr;
-    .nav-links {
-      display: block;
-    }
-  }
-  .nav li {
-    display: inline-block;
-  }
-}
-
 /* @media speech for screen readers */
 /* @media speech {
   .grid-container {
