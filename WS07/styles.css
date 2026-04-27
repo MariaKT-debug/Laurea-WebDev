@@ -164,6 +164,7 @@ video::cue {
   background-color: antiquewhite;
   color: black;
   font-family: "Roboto Slab", serif;
+  font-weight: bold;
 }
 .footer a {
   text-decoration: none;
