@@ -14,11 +14,10 @@
     <link href="styles.css" rel="stylesheet" />
     <style>
       .main {
-        clear: right;
         background-color: #fff;
-        padding: 200px;
-        font-size: 1.25em;
-        margin: 20px;
+        padding: 1.25rem 1rem;
+        font-size: 1rem;
+        margin: 0.75rem;
         text-align: center;
       }
 
@@ -30,6 +29,22 @@
       .external-link:hover {
         color: #086c1c;
         text-decoration: underline;
+      }
+
+      @media (min-width: 768px) {
+        .main {
+          padding: 2.25rem;
+          margin: 1rem auto;
+          font-size: 1.1rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .main {
+          padding: 3.5rem;
+          margin: 1.25rem auto;
+          font-size: 1.2rem;
+        }
       }
     </style>
 

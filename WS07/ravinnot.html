@@ -14,27 +14,36 @@
     <link href="styles.css" rel="stylesheet" />
     <style>
       article {
-        padding: 2%;
+        padding: 1rem;
         font-family: "Roboto Slab", serif;
+        background-color: #fff;
       }
+
       article h3 {
         text-align: center;
         font-size: 1.5em;
         margin-bottom: 10px;
         font-family: "Roboto Slab", serif;
       }
+
       article img {
         margin: 0 auto;
         display: block;
-        position: relative;
-        max-width: 50%;
+        max-width: min(100%, 320px);
       }
+
       article p {
         text-align: center;
         font-size: 1.2em;
         margin-top: 10px;
         display: block;
         font-family: "Roboto Slab", serif;
+      }
+
+      @media (min-width: 1024px) {
+        article {
+          padding: 1.25rem;
+        }
       }
     </style>
 
