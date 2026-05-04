@@ -1,138 +1,123 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=optional"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="styles.css" rel="stylesheet" />
-    <style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=optional"
+    rel="stylesheet">
+
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    article {
+      padding: 1rem;
+      font-family: "Roboto Slab", serif;
+      background-color: #fff;
+    }
+
+    article h3 {
+      text-align: center;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      font-family: "Roboto Slab", serif;
+    }
+
+    article img {
+      margin: 0 auto;
+      display: block;
+      max-width: min(100%, 320px);
+    }
+
+    article p {
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 10px;
+      display: block;
+      font-family: "Roboto Slab", serif;
+    }
+
+    @media (min-width: 1024px) {
       article {
-        padding: 1rem;
-        font-family: "Roboto Slab", serif;
-        background-color: #fff;
+        padding: 1.25rem;
       }
+    }
+  </style>
 
-      article h3 {
-        text-align: center;
-        font-size: 1.5em;
-        margin-bottom: 10px;
-        font-family: "Roboto Slab", serif;
-      }
+  <title>Lulu-hamsterin verkkosivusto</title>
+</head>
 
-      article img {
-        margin: 0 auto;
-        display: block;
-        max-width: min(100%, 320px);
-      }
-
-      article p {
-        text-align: center;
-        font-size: 1.2em;
-        margin-top: 10px;
-        display: block;
-        font-family: "Roboto Slab", serif;
-      }
-
-      @media (min-width: 1024px) {
-        article {
-          padding: 1.25rem;
-        }
-      }
-    </style>
-
-    <title>Lulu-hamsterin verkkosivusto</title>
-  </head>
-
-  <body>
-    <div class="grid-container">
-      <!-- header -->
-      <div class="header">
-        <a href="index.html"
-          ><img
-            src="media/lulu/lulu_taulu.jpg"
-            alt="Kuva Lulu-hamsterista kotona, Lulu on kämmenellä. Se on logo."
-            width="100"
-            height="100"
-        /></a>
-        <h1>Lulu-hamsterin verkkosivusto</h1>
-      </div>
-
-      <!-- navigation bar -->
-      <div class="nav">
-        <ul>
-          <li><a href="index.html">Etusivu</a></li>
-          <li><a href="lulu.html">Lulu</a></li>
-          <li><a href="terraario.html">Terraario</a></li>
-          <li class="active"><a href="ravinnot.html">Ravinnot</a></li>
-          <li><a href="ottakaa_yhteytta.html">Ottakaa yhteyttä</a></li>
-        </ul>
-      </div>
-
-      <!-- main content -->
-      <div class="main">
-        <div class="grid">
-          <article>
-            <h3>Auringonkukansiemenet</h3>
-            <img
-              src="media/ravinnot/auringonkukansiemenet.jpg"
-              alt="Kuva auringonkukansiemenistä, jotka ovat hamstereiden suosikkiherkku."
-            />
-            <p>
-              Auringonkukansiemenet ovat hamstereiden suosikkiherkku. Ne ovat maukkaita ja ravitsevia, mutta niitä
-              tulisi antaa vain satunnaisesti, koska ne sisältävät paljon rasvaa.
-            </p>
-          </article>
-          <article>
-            <h3>Hernehiutaleet</h3>
-            <img
-              src="media/ravinnot/hernehiutaleet_4 .jpg"
-              alt="Kuva hernehiutaleista, joita hamstereille voi antaa."
-            />
-            <p>
-              Hernehiutaleet ovat myös hyvä lisä hamstereiden ruokavalioon. Ne tarjoavat proteiinia ja kuitua, mutta
-              niitä tulisi antaa kohtuudella.
-            </p>
-          </article>
-          <article>
-            <h3>Proteiinicoctail</h3>
-            <img
-              src="media/ravinnot/proteiini_coctail.jpg"
-              alt="Kuva proteiinicoctailista, jota hamstereille voi antaa."
-            />
-            <p>
-              Proteiinicoctail on hyvä proteiinin lähde hamstereille. Se voidaan antaa kuivattuina tai elävänä, mutta
-              sitä tulisi antaa kohtuudella.
-            </p>
-          </article>
-          <article>
-            <h3>Nakertelutähkät</h3>
-            <img
-              src="media/ravinnot/nakertelutähkät_4 .jpg"
-              alt="Kuva erilaisista nakertelutähkistä, joita hamstereille voi antaa."
-            />
-            <p>
-              Nakertelutähkät ovat hyvä lisä hamstereiden ruokavalioon. Ne tarjoavat kuitua ja auttavat pitämään hampaat
-              kunnossa, mutta niitä tulisi antaa kohtuudella.
-            </p>
-          </article>
-        </div>
-      </div>
-
-      <!-- footer -->
-      <div class="footer">
-        <a href="terraario.html" class="previous">&laquo; Edellinen</a>
-        <a href="ottakaa_yhteytta.html" class="next">Seuraava &raquo;</a>
-        <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>
-      </div>
-
-      <!--  -->
+<body>
+  <div class="grid-container">
+    <!-- header -->
+    <div class="header">
+      <a href="index.html"><img src="media/lulu/lulu_taulu.jpg"
+          alt="Kuva Lulu-hamsterista kotona, Lulu on kämmenellä. Se on logo." width="100" height="100"></a>
+      <h1>Lulu-hamsterin verkkosivusto</h1>
     </div>
-  </body>
+
+    <!-- navigation bar -->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="lulu.html">Lulu</a></li>
+        <li><a href="terraario.html">Terraario</a></li>
+        <li class="active"><a href="ravinnot.html">Ravinnot</a></li>
+        <li><a href="ottakaa_yhteytta.html">Ottakaa yhteyttä</a></li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="main">
+      <div class="grid">
+        <article>
+          <h3>Auringonkukansiemenet</h3>
+          <img src="media/ravinnot/auringonkukansiemenet.jpg"
+            alt="Kuva auringonkukansiemenistä, jotka ovat hamstereiden suosikkiherkku.">
+          <p>
+            Auringonkukansiemenet ovat hamstereiden suosikkiherkku. Ne ovat maukkaita ja ravitsevia, mutta niitä
+            tulisi antaa vain satunnaisesti, koska ne sisältävät paljon rasvaa.
+          </p>
+        </article>
+        <article>
+          <h3>Hernehiutaleet</h3>
+          <img src="media/ravinnot/hernehiutaleet_4.jpg" alt="Kuva hernehiutaleista, joita hamstereille voi antaa.">
+          <p>
+            Hernehiutaleet ovat myös hyvä lisä hamstereiden ruokavalioon. Ne tarjoavat proteiinia ja kuitua, mutta
+            niitä tulisi antaa kohtuudella.
+          </p>
+        </article>
+        <article>
+          <h3>Proteiinicoctail</h3>
+          <img src="media/ravinnot/proteiini_coctail.jpg" alt="Kuva proteiinicoctailista, jota hamstereille voi antaa.">
+          <p>
+            Proteiinicoctail on hyvä proteiinin lähde hamstereille. Se voidaan antaa kuivattuina tai elävänä, mutta
+            sitä tulisi antaa kohtuudella.
+          </p>
+        </article>
+        <article>
+          <h3>Nakertelutähkät</h3>
+          <img src="media/ravinnot/nakertelutähkät_4.jpg"
+            alt="Kuva erilaisista nakertelutähkistä, joita hamstereille voi antaa.">
+          <p>
+            Nakertelutähkät ovat hyvä lisä hamstereiden ruokavalioon. Ne tarjoavat kuitua ja auttavat pitämään hampaat
+            kunnossa, mutta niitä tulisi antaa kohtuudella.
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <a href="terraario.html" class="previous">&laquo; Edellinen</a>
+      <a href="ottakaa_yhteytta.html" class="next">Seuraava &raquo;</a>
+      <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>
+    </div>
+
+    <!--  -->
+  </div>
+</body>
+
 </html>

@@ -1,116 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=optional"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="styles.css" rel="stylesheet" />
-    <style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=optional"
+    rel="stylesheet">
+
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    .main {
+      background-color: #fff;
+      padding: 1.25rem 1rem;
+      font-size: 1rem;
+      margin: 0.75rem;
+      text-align: center;
+    }
+
+    .external-link {
+      color: #0d0557;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .external-link:hover {
+      color: #086c1c;
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
       .main {
-        background-color: #fff;
-        padding: 1.25rem 1rem;
-        font-size: 1rem;
-        margin: 0.75rem;
-        text-align: center;
+        padding: 2.25rem;
+        margin: 1rem auto;
+        font-size: 1.1rem;
       }
+    }
 
-      .external-link {
-        color: #0d0557;
-        font-weight: bold;
-        text-decoration: none;
+    @media (min-width: 1024px) {
+      .main {
+        padding: 3.5rem;
+        margin: 1.25rem auto;
+        font-size: 1.2rem;
       }
-      .external-link:hover {
-        color: #086c1c;
-        text-decoration: underline;
-      }
+    }
+  </style>
 
-      @media (min-width: 768px) {
-        .main {
-          padding: 2.25rem;
-          margin: 1rem auto;
-          font-size: 1.1rem;
-        }
-      }
+  <title>Lulu-hamsterin verkkosivusto</title>
+</head>
 
-      @media (min-width: 1024px) {
-        .main {
-          padding: 3.5rem;
-          margin: 1.25rem auto;
-          font-size: 1.2rem;
-        }
-      }
-    </style>
-
-    <title>Lulu-hamsterin verkkosivusto</title>
-  </head>
-
-  <body>
-    <div class="grid-container">
-      <!-- header -->
-      <div class="header">
-        <a href="index.html"
-          ><img
-            src="media/lulu/lulu_taulu.jpg"
-            alt="Kuva Lulu-hamsterista kotona, Lulu on kämmenellä. Se on logo."
-            width="100"
-            height="100"
-        /></a>
-        <h1>Lulu-hamsterin verkkosivusto</h1>
-      </div>
-
-      <!-- navigation bar -->
-      <div class="nav">
-        <ul>
-          <li class="active"><a href="index.html">Etusivu</a></li>
-          <li><a href="lulu.html">Lulu</a></li>
-          <li><a href="terraario.html">Terraario</a></li>
-          <li><a href="ravinnot.html">Ravinnot</a></li>
-          <li><a href="ottakaa_yhteytta.html">Ottakaa yhteyttä</a></li>
-        </ul>
-      </div>
-
-      <!-- main content -->
-      <div class="main">
-        <h2>Tervetuloa Lulu-hamsterin verkkosivustolle!</h2>
-        <p>
-          Tämä on Lulu-hamsterin oma verkkosivusto. <br /><br />
-          Tästä voit löytää tietoa hänen elämästään, terraariostaan ja ravinnostaan.
-        </p>
-        <video
-          controls
-          poster="media/etusivu/Lulu.jpg"
-          alt="Kuva Lulu-hamsterista kotona, Lulu on kämmenellä."
-          width="600"
-          height="450"
-          class="responsive-image"
-        >
-          <source src="media/etusivu/Lulu_kotona.mp4" type="video/mp4" />
-          <source src="media/etusivu/Lulu_kotona.webm" type="video/webm" />
-          <p>Valitettavasti video ei ole tuettu selaimessasi.</p>
-          <track src="captions.vtt" kind="captions" srclang="fi" label="Captions" />
-          <track src="descriptions.vtt" kind="descriptions" srclang="fi" label="Descriptions" />
-        </video>
-        <p>
-          Lisää ja yleisiä tietoja löydät hamstereista muilta nettisivuiltakin kuten esimerkiksi:
-          <a href="https://hamsterit.net/" target="_blank" class="external-link">Hamsterit.net</a> tai
-          <a href="https://hamsteriyhdistys.fi/" target="_blank" class="external-link">Hamsteriyhdistys.fi</a>.
-        </p>
-      </div>
-
-      <!-- footer -->
-      <div class="footer">
-        <a href="lulu.html" class="next">Seuraava &raquo;</a>
-        <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>
-      </div>
-
-      <!--  -->
+<body>
+  <div class="grid-container">
+    <!-- header -->
+    <div class="header">
+      <a href="index.html">
+        <img src="media/lulu/lulu_taulu.jpg" alt="Kuva Lulu-hamsterista kotona, Lulu on kämmenellä. Se on logo."
+          width="100" height="100"></a>
+      <h1>Lulu-hamsterin verkkosivusto</h1>
     </div>
-  </body>
+
+    <!-- navigation bar -->
+    <div class="nav">
+      <ul>
+        <li class="active"><a href="index.html">Etusivu</a></li>
+        <li><a href="lulu.html">Lulu</a></li>
+        <li><a href="terraario.html">Terraario</a></li>
+        <li><a href="ravinnot.html">Ravinnot</a></li>
+        <li><a href="ottakaa_yhteytta.html">Ottakaa yhteyttä</a></li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="main">
+      <h2>Tervetuloa Lulu-hamsterin verkkosivustolle!</h2>
+      <p>
+        Tämä on Lulu-hamsterin oma verkkosivusto. <br><br>
+        Tästä voit löytää tietoa hänen elämästään, terraariostaan ja ravinnostaan.
+      </p>
+      <video controls poster="media/etusivu/Lulu.jpg" aria-label="Video Lulu-hamsterista kotona, Lulu on kämmenellä."
+        width="600" height="450" class="responsive-image">
+        <source src="media/etusivu/Lulu_kotona.mp4" type="video/mp4">
+        <source src="media/etusivu/Lulu_kotona.webm" type="video/webm">
+        <track src="captions.vtt" kind="captions" srclang="fi" label="Captions">
+        <track src="descriptions.vtt" kind="descriptions" srclang="fi" label="Descriptions">
+        <p>Valitettavasti video ei ole tuettu selaimessasi.</p>
+      </video>
+      <p>
+        Lisää ja yleisiä tietoja löydät hamstereista muilta nettisivuiltakin kuten esimerkiksi:
+        <a href="https://hamsterit.net/" target="_blank" class="external-link">Hamsterit.net</a> tai
+        <a href="https://hamsteriyhdistys.fi/" target="_blank" class="external-link">Hamsteriyhdistys.fi</a>.
+      </p>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <a href="lulu.html" class="next">Seuraava &raquo;</a>
+      <p>Copyright &copy; 2026 Mária Kaszakiné Turcsányi</p>
+    </div>
+
+    <!--  -->
+  </div>
+</body>
+
 </html>
